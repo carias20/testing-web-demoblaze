@@ -26,9 +26,9 @@ Cypress.Commands.add('verificarOrden', () => {
     cy.get('td').contains('Samsung galaxy s6').should('exist');
 });
 Cypress.Commands.add('EliminarProducto', () => {
-    cy.get(':nth-child(4) > .nav-link').click();
-    cy.get('td').should('have.length.greaterThan', 0);
-    cy.get('td').contains('Samsung galaxy s6').should('exist');
+    cy.get('a').contains('Delete').should('be.visible');
+    cy.get('a').contains('Delete').click();
+
 });
 Cypress.Commands.add('SalirAplicacion', () => {
     cy.get(':nth-child(4) > .nav-link').click();

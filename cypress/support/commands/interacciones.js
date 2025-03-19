@@ -15,7 +15,6 @@ Cypress.Commands.add("escribir", (texto, selector) => {
     .should("be.enabled")
     .type(texto);
   });
-
   Cypress.Commands.add("esperarCargaPagina", () => {
     cy.document().should("exist");
   });

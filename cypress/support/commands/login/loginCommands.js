@@ -19,7 +19,6 @@ Cypress.Commands.add('IngresoCuenta', (datosLogin) => {
 
 });
 Cypress.Commands.add('VerificacionCuenta', (datosLogin) => {
-            // Depurar el DOM para ver el estado de los elementos
             cy.get(ui.TXT_USUARIO_LOGEADO).debug();
             cy.get(ui.TXT_USUARIO_LOGEADO)
               .should('not.have.css', 'display', 'none')
