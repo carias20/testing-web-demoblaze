@@ -31,8 +31,5 @@ O alternativamente puedes usar el comando personalizado.
 ```bash
     npm run test
 ```
-   Esto ejecutará las pruebas automáticamente y mostrará el resultado en la terminal.
-
-```
 
 
